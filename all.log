@@ -1,0 +1,129 @@
+2016-12-31 18:01:34.771 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Starting BenchFoundry master.
+2016-12-31 18:01:34.781 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Reading BenchFoundry config files.
+2016-12-31 18:01:34.782 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Using schema from file tpcc/tpcc_schema
+2016-12-31 18:01:34.782 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Using queries from oplist file tpcc/tpcc_operation
+2016-12-31 18:01:34.783 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Using parameters from file tpcc/tpcc_param
+2016-12-31 18:01:34.783 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Using no custom parameters.
+2016-12-31 18:01:34.783 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Using preload trace from file tpcc/tpcc_load
+2016-12-31 18:01:34.784 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Using warm up trace from file tpcc/tpcc_warm
+2016-12-31 18:01:34.784 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Using experiment trace from file tpcc/tpcc_run
+2016-12-31 18:01:34.784 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Using dbconnector config data from file mariadb.properties
+2016-12-31 18:01:34.784 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Setting result output directory to results
+2016-12-31 18:01:34.787 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Using schema factory class RelationalPhysicalSchemaFactory
+2016-12-31 18:01:34.791 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Using database connector MariadbRelationalConnector
+2016-12-31 18:01:34.792 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Setting transaction prepare time to 1000ms
+2016-12-31 18:01:34.792 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Setting process schedule ahead time to 500ms
+2016-12-31 18:01:34.792 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Registered slave: RPCHost [slave1@54.244.103.234:9090]
+2016-12-31 18:01:34.793 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Registered slave: RPCHost [slave2@54.218.21.93:9091]
+2016-12-31 18:01:34.793 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Registered slave: RPCHost [slave3@54.218.142.117:9092]
+2016-12-31 18:01:34.793 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Registered slave: RPCHost [slave4@54.244.15.202:9093]
+2016-12-31 18:01:34.794 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Running BenchFoundry with one master and 4 slave instance(s).
+2016-12-31 18:01:34.794 [main] INFO  de.tuberlin.ise.benchfoundry.util.BenchFoundryConfigData - Detailled logging for business processes with exceptions has been enabled.
+2016-12-31 18:01:35.072 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Configuring SUT.
+2016-12-31 18:01:35.154 [main] INFO  de.tuberlin.ise.benchfoundry.connectors.impl.MariadbRelationalConnector - Successfully established connection to MariaDB at endpoint 'jdbc:mariadb://54.191.233.7:3306/'.
+2016-12-31 18:01:35.163 [main] INFO  de.tuberlin.ise.benchfoundry.connectors.impl.MariadbRelationalConnector - Successfully created database 'test'.
+2016-12-31 18:01:35.174 [main] INFO  de.tuberlin.ise.benchfoundry.connectors.impl.MariadbRelationalConnector - Successfully established connection to database 'test'.
+2016-12-31 18:01:35.350 [main] INFO  de.tuberlin.ise.benchfoundry.connectors.impl.MariadbRelationalConnector - Successfully created tables.
+2016-12-31 18:01:35.351 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Connecting to SUT
+2016-12-31 18:01:35.361 [main] INFO  de.tuberlin.ise.benchfoundry.connectors.impl.MariadbRelationalConnector - Successfully established connection to database 'test'.
+2016-12-31 18:01:35.361 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Now splitting preload and experiment traces. This may take a while.
+2016-12-31 18:01:35.362 [main] DEBUG de.tuberlin.ise.benchfoundry.util.TraceFileSplitter - Spraying process definitions started.
+2016-12-31 18:01:35.511 [main] DEBUG de.tuberlin.ise.benchfoundry.util.TraceFileSplitter - Spraying process definitions completed.
+2016-12-31 18:01:35.511 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Finished splitting preload trace into 5 parts.
+2016-12-31 18:01:35.511 [main] DEBUG de.tuberlin.ise.benchfoundry.util.TraceFileSplitter - Spraying process definitions started.
+2016-12-31 18:01:35.566 [main] DEBUG de.tuberlin.ise.benchfoundry.util.TraceFileSplitter - Spraying process definitions completed.
+2016-12-31 18:01:35.572 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Finished splitting experiment trace into 5 parts.
+2016-12-31 18:01:35.621 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Connection to slave RPCHost [slave4@54.244.15.202:9093] is now open.
+2016-12-31 18:01:35.641 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Connection to slave RPCHost [slave3@54.218.142.117:9092] is now open.
+2016-12-31 18:01:35.673 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Connection to slave RPCHost [slave2@54.218.21.93:9091] is now open.
+2016-12-31 18:01:35.690 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Connection to slave RPCHost [slave1@54.244.103.234:9090] is now open.
+2016-12-31 18:01:35.707 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending CONFIG_DATA to slave slave4, size in bytes=3387
+2016-12-31 18:01:35.922 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending CONFIG_DATA to slave slave3, size in bytes=3387
+2016-12-31 18:01:36.175 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending CONFIG_DATA to slave slave2, size in bytes=3387
+2016-12-31 18:01:36.557 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending CONFIG_DATA to slave slave1, size in bytes=3387
+2016-12-31 18:01:36.769 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Configuration details have been forwarded to slaves.
+2016-12-31 18:01:36.797 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending SCHEMA to slave slave4, size in bytes=2495
+2016-12-31 18:01:36.799 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending SCHEMA to slave slave3, size in bytes=2495
+2016-12-31 18:01:36.802 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending SCHEMA to slave slave2, size in bytes=2495
+2016-12-31 18:01:36.805 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending SCHEMA to slave slave1, size in bytes=2495
+2016-12-31 18:01:36.808 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending OP_LIST to slave slave4, size in bytes=2478
+2016-12-31 18:01:36.815 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending OP_LIST to slave slave3, size in bytes=2478
+2016-12-31 18:01:36.816 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending OP_LIST to slave slave2, size in bytes=2478
+2016-12-31 18:01:36.817 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending OP_LIST to slave slave1, size in bytes=2478
+2016-12-31 18:01:36.821 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending PARAM_LIST to slave slave4, size in bytes=1861027
+2016-12-31 18:01:36.909 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending PARAM_LIST to slave slave3, size in bytes=1861027
+2016-12-31 18:01:36.937 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending PARAM_LIST to slave slave2, size in bytes=1861027
+2016-12-31 18:01:37.002 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending PARAM_LIST to slave slave1, size in bytes=1861027
+2016-12-31 18:01:37.087 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending CUST_PARAM_LIST to slave slave4, size in bytes=13
+2016-12-31 18:01:37.089 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending CUST_PARAM_LIST to slave slave3, size in bytes=13
+2016-12-31 18:01:37.091 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending CUST_PARAM_LIST to slave slave2, size in bytes=13
+2016-12-31 18:01:37.094 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending CUST_PARAM_LIST to slave slave1, size in bytes=13
+2016-12-31 18:01:37.096 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending DB_CONFIG to slave slave4, size in bytes=118
+2016-12-31 18:01:37.098 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending DB_CONFIG to slave slave3, size in bytes=118
+2016-12-31 18:01:37.100 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending DB_CONFIG to slave slave2, size in bytes=118
+2016-12-31 18:01:37.102 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending DB_CONFIG to slave slave1, size in bytes=118
+2016-12-31 18:01:37.105 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending PRELOAD_TRACE to slave slave4, size in bytes=31590
+2016-12-31 18:01:37.108 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending WARMUP_TRACE to slave slave4, size in bytes=0
+2016-12-31 18:01:37.109 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending EXPERIMENT_TRACE to slave slave4, size in bytes=40539
+2016-12-31 18:01:37.122 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending PRELOAD_TRACE to slave slave3, size in bytes=31552
+2016-12-31 18:01:37.125 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending WARMUP_TRACE to slave slave3, size in bytes=0
+2016-12-31 18:01:37.126 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending EXPERIMENT_TRACE to slave slave3, size in bytes=40540
+2016-12-31 18:01:37.134 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending PRELOAD_TRACE to slave slave2, size in bytes=31552
+2016-12-31 18:01:37.136 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending WARMUP_TRACE to slave slave2, size in bytes=0
+2016-12-31 18:01:37.137 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending EXPERIMENT_TRACE to slave slave2, size in bytes=40541
+2016-12-31 18:01:37.156 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending PRELOAD_TRACE to slave slave1, size in bytes=31552
+2016-12-31 18:01:37.159 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending WARMUP_TRACE to slave slave1, size in bytes=0
+2016-12-31 18:01:37.160 [main] DEBUG de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - sending EXPERIMENT_TRACE to slave slave1, size in bytes=40539
+2016-12-31 18:01:37.173 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - All input and trace files have been forwarded to slaves.
+2016-12-31 18:01:37.175 [main] INFO  de.tuberlin.ise.benchfoundry.util.PhaseManager - Changed phase from INIT to PRELOAD
+2016-12-31 18:01:37.197 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Slave slave4 commits to starting phase PRELOAD at 18:01:37,176
+2016-12-31 18:01:37.210 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Slave slave3 commits to starting phase PRELOAD at 18:01:37,176
+2016-12-31 18:01:37.225 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Slave slave2 commits to starting phase PRELOAD at 18:01:37,176
+2016-12-31 18:01:37.237 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Slave slave1 commits to starting phase PRELOAD at 18:01:37,176
+2016-12-31 18:01:37.237 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Signaled slaves to start preload and warmup phase.
+2016-12-31 18:01:37.246 [main] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase PRELOAD initialized.
+2016-12-31 18:01:37.246 [PRELOAD] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase PRELOAD started.
+2016-12-31 18:01:37.252 [PRELOAD-thread-0] INFO  de.tuberlin.ise.benchfoundry.results.ResultLogger - Output directory results created.
+2016-12-31 18:01:40.299 [PRELOAD] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Shutdown of scheduler for phase PRELOAD initiated.
+2016-12-31 18:01:40.299 [PRELOAD] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase PRELOAD terminated (business processes may still be running).
+2016-12-31 18:01:40.317 [PRELOAD] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - All processes of phase PRELOAD terminated.
+2016-12-31 18:01:40.317 [main] INFO  de.tuberlin.ise.benchfoundry.util.PhaseManager - Changed phase from PRELOAD to WARMUP
+2016-12-31 18:01:40.318 [main] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase WARMUP initialized.
+2016-12-31 18:01:40.318 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Starting agreement process for experiment start timestamp. Proposed value: 18:02:10,318
+2016-12-31 18:01:40.321 [WARMUP] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase WARMUP started.
+2016-12-31 18:01:40.323 [WARMUP] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Shutdown of scheduler for phase WARMUP initiated.
+2016-12-31 18:01:40.323 [WARMUP] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - Scheduler for phase WARMUP terminated (business processes may still be running).
+2016-12-31 18:01:40.323 [WARMUP] INFO  de.tuberlin.ise.benchfoundry.scheduling.SequentialScheduler - All processes of phase WARMUP terminated.
+2016-12-31 18:01:40.370 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Slave slave4 is not ready for accepting a start time. Retrying in 30 seconds.
+2016-12-31 18:02:10.412 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Slave slave4 commits to starting phase EXPERIMENT at 18:02:40,318
+2016-12-31 18:02:10.413 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Slave slave3 commits to starting phase EXPERIMENT at 18:02:40,318
+2016-12-31 18:02:10.414 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Slave slave2 commits to starting phase EXPERIMENT at 18:02:40,318
+2016-12-31 18:02:10.415 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Slave slave1 commits to starting phase EXPERIMENT at 18:02:40,318
+2016-12-31 18:02:10.416 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Agreement process concluded, experiment start timestamp is set to 18:02:40,318
+2016-12-31 18:02:10.416 [main] INFO  de.tuberlin.ise.benchfoundry.util.Time - Start time for experiment phase has been set to 18:02:40,318
+2016-12-31 18:02:10.416 [main] DEBUG de.tuberlin.ise.benchfoundry.Starter - (1) Current relative time is -29902
+2016-12-31 18:02:38.813 [main] DEBUG de.tuberlin.ise.benchfoundry.Starter - (2) Current relative time is -1505
+2016-12-31 18:02:38.814 [main] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Scheduler for phase EXPERIMENT initialized.
+2016-12-31 18:02:38.814 [main] DEBUG de.tuberlin.ise.benchfoundry.Starter - (3) Current relative time is -1504
+2016-12-31 18:02:38.814 [EXPERIMENT] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Scheduler for phase EXPERIMENT started.
+2016-12-31 18:02:40.313 [main] DEBUG de.tuberlin.ise.benchfoundry.Starter - (4) Current relative time is -5
+2016-12-31 18:02:40.313 [main] DEBUG de.tuberlin.ise.benchfoundry.Starter - (5) Current relative time is -5
+2016-12-31 18:02:40.313 [main] INFO  de.tuberlin.ise.benchfoundry.util.PhaseManager - Changed phase from WARMUP to EXPERIMENT
+2016-12-31 18:02:40.313 [main] DEBUG de.tuberlin.ise.benchfoundry.Starter - (6) Current relative time is -5
+2016-12-31 18:02:40.314 [LOG] INFO  de.tuberlin.ise.benchfoundry.results.ResultLogger - ResultLogger started.
+2016-12-31 18:04:37.816 [EXPERIMENT] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Shutdown of scheduler for phase EXPERIMENT initiated.
+2016-12-31 18:04:37.816 [EXPERIMENT] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Scheduler for phase EXPERIMENT terminated (business processes may still be running).
+2016-12-31 18:04:39.361 [EXPERIMENT] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Some business processes are still running.
+2016-12-31 18:04:39.361 [EXPERIMENT] INFO  de.tuberlin.ise.benchfoundry.scheduling.Scheduler - Scheduler is terminated.
+2016-12-31 18:04:39.362 [main] DEBUG de.tuberlin.ise.benchfoundry.Starter - (7) Current relative time is 119044
+2016-12-31 18:04:39.362 [main] INFO  de.tuberlin.ise.benchfoundry.util.PhaseManager - Changed phase from EXPERIMENT to CLEANUP
+2016-12-31 18:04:39.365 [main] INFO  de.tuberlin.ise.benchfoundry.util.MicroStatisticsCollector - Scheduling delays (0 is optimal): earliest=0.0, latest=2.0, average=0.049999999999999996, average of absolutes=0.049999999999999996, total number=480
+2016-12-31 18:04:39.366 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Cleaning SUT.
+2016-12-31 18:04:39.367 [main] WARN  de.tuberlin.ise.benchfoundry.connectors.impl.MariadbRelationalConnector - cleanUpDatabase() is not implemented yet
+2016-12-31 18:04:39.368 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Connection to slave RPCHost [slave4@54.244.15.202:9093] is now closed.
+2016-12-31 18:04:39.368 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Connection to slave RPCHost [slave3@54.218.142.117:9092] is now closed.
+2016-12-31 18:04:39.368 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Connection to slave RPCHost [slave2@54.218.21.93:9091] is now closed.
+2016-12-31 18:04:39.369 [main] INFO  de.tuberlin.ise.benchfoundry.rpc.MasterToSlaveCommunicator - Connection to slave RPCHost [slave1@54.244.103.234:9090] is now closed.
+2016-12-31 18:04:39.369 [main] INFO  de.tuberlin.ise.benchfoundry.Starter - Closing connection to SUT
+2016-12-31 18:04:39.369 [main] INFO  de.tuberlin.ise.benchfoundry.util.PhaseManager - Changed phase from CLEANUP to TERMINATED
+2016-12-31 18:04:39.414 [LOG] INFO  de.tuberlin.ise.benchfoundry.results.ResultLogger - ResultLogger terminated.
